@@ -1,0 +1,62 @@
+[
+  {
+    "_id": "1",
+    "name": "Brewed Awakenings",
+    "details": "Cozy neighborhood coffee shop with artisan espresso drinks.",
+    "price": 15,
+    "chef": "Alice McBrew",
+    "category": "Espresso",
+    "taste": "Rich, smooth, slightly bitter",
+    "supplier": "Green Bean Traders"
+  },
+  {
+    "_id": "2",
+    "name": "Café Mocha",
+    "details": "Famous for its chocolate-infused coffee blends and decadent pastries.",
+    "price": 20,
+    "chef": "Paul Choco",
+    "category": "Mocha",
+    "taste": "Chocolatey, sweet, creamy",
+    "supplier": "Cocoa Beans International"
+  },
+  {
+    "_id": "3",
+    "name": "The Java Spot",
+    "details": "Trendy cafe with a focus on single-origin coffee.",
+    "price": 18,
+    "chef": "Maria Santos",
+    "category": "Single Origin",
+    "taste": "Bright, fruity, acidic",
+    "supplier": "Pure Origins Coffee"
+  },
+  {
+    "_id": "4",
+    "name": "Steamy Beans",
+    "details": "A modern coffee shop offering a variety of cold brew options.",
+    "price": 10,
+    "chef": "Daniel Brewster",
+    "category": "Cold Brew",
+    "taste": "Bold, smooth, slightly sweet",
+    "supplier": "Northern Roast Co."
+  },
+  {
+    "_id": "5",
+    "name": "Latte Love",
+    "details": "Known for its creative latte art and smooth creamy beverages.",
+    "price": 22,
+    "chef": "Sophie Barista",
+    "category": "Latte",
+    "taste": "Mild, creamy, slightly sweet",
+    "supplier": "Creamy Beans Collective"
+  },
+  {
+    "_id": "6",
+    "name": "Espresso Express",
+    "details": "Fast-paced coffee shop specializing in quick espresso shots for commuters.",
+    "price": 8,
+    "chef": "Rob Speed",
+    "category": "Espresso",
+    "taste": "Strong, intense, slightly bitter",
+    "supplier": "Urban Roasters"
+  }
+]

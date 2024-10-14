@@ -17,24 +17,24 @@ const AddCoffee = () => {
         const category = form.category.value;
         const price = form.price.value;
         const photo = form.photo.value;
-    
+
         const newCoffee = {
-            name, chef, supplier, taste, details, category,price, photo
+            name, chef, supplier, taste, details, category, price, photo
         }
-        fetch('http://localhost:5000/coffee',{
+        fetch('https://coffee-store-server-kxuqsdl2n-mahedes-projects-fb0c4014.vercel.app/coffee', {
             method: 'POST',
             headers: {
-                'content-type' : 'application/json'
+                'content-type': 'application/json'
             },
             body: JSON.stringify(newCoffee)
         })
-        .then(res=>res.json())
-        .then(data=>{
-            if(data.insertedId){
-                Swal.fire("Successfully Added coffee");
-            }
-            
-        })
+            .then(res => res.json())
+            .then(data => {
+                if (data.insertedId) {
+                    Swal.fire("Successfully Added coffee");
+                }
+
+            })
     }
     return (
         <div className='w-full'>

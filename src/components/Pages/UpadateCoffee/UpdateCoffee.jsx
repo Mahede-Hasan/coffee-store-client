@@ -35,10 +35,10 @@ const UpdateCoffee = () => {
 
             if (result.isConfirmed) {
 
-                fetch(`http://localhost:5000/coffee/${_id}`,{
+                fetch(`https://coffee-store-server-kxuqsdl2n-mahedes-projects-fb0c4014.vercel.app/coffee/${_id}`, {
                     method: 'PUT',
                     headers: {
-                        'content-type' : 'application/json'
+                        'content-type': 'application/json'
                     },
                     body: JSON.stringify(updateCoffee)
                 })
@@ -58,7 +58,7 @@ const UpdateCoffee = () => {
             }
         });
 
-   
+
     }
     return (
         <div className='w-full'>

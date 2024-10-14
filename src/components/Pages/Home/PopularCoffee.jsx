@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { BsCupHot } from 'react-icons/bs';
-import Coffee from './Coffee';
-import leftBg from '../../../assets/images/more/4.png'
 import { Link, useLoaderData } from 'react-router-dom';
+import SingleCoffee from './SingleCoffee';
 const PopularCoffee = () => {
     const coffeeLoader = useLoaderData()
     const [coffees, setCoffees] = useState(coffeeLoader)
@@ -28,12 +27,12 @@ const PopularCoffee = () => {
                 <div className='grid md:grid-cols-2 grid-cols-1 my-10 gap-5'>
                     {
                         coffees.map(coffee => 
-                        <Coffee 
+                        <SingleCoffee 
                             key={coffee._id} 
                             coffee={coffee}
                             coffees={coffees}
                             setCoffees={setCoffees}
-                            ></Coffee>)
+                            ></SingleCoffee>)
                     }
                 </div>
             </div>

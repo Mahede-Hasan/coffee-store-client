@@ -4,7 +4,7 @@ import { MdDelete, MdEdit } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
-const Coffee = ({ coffee, coffees, setCoffees }) => {
+const SingleCoffee = ({ coffee, coffees, setCoffees }) => {
     const { _id, photo, name, chef, price } = coffee;
 
     const handleDelete = _id => {
@@ -21,7 +21,7 @@ const Coffee = ({ coffee, coffees, setCoffees }) => {
 
             if (result.isConfirmed) {
 
-                fetch(`http://localhost:5000/coffee/${_id}`, {
+                fetch(`https://coffee-store-server-kxuqsdl2n-mahedes-projects-fb0c4014.vercel.app/coffee/${_id}`, {
                     method: 'DELETE'
 
                 })
@@ -71,4 +71,4 @@ const Coffee = ({ coffee, coffees, setCoffees }) => {
     );
 };
 
-export default Coffee;
+export default SingleCoffee;
